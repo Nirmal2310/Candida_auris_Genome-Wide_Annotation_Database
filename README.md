@@ -1,7 +1,7 @@
 # Candida auris Genome-Wide Annotation Database
 This repository contains the Annotation Database for Candida auris B11220 and the steps to build the database locally.
 
-#### The files required to build this database are in the DATA directory. You can build the database locally using the following R command
+### The files required to build this database are in the DATA directory. You can build the database locally using the following R command
 ```R
 library(org.Cauris.eg.db)
 
@@ -30,7 +30,7 @@ install.packages("./org.Cauris.eg.db", repos=NULL, type="source")
 
 library(org.Cauris.eg.db)
 ```
-#### To perform enrichment analysis on your data using Candida auris B11220 Genome-Wide Database use the following R code
+### To perform enrichment analysis on your data using Candida auris B11220 Genome-Wide Database use the following R code
 ```R
 library(clusterProfiler)
 
@@ -60,4 +60,16 @@ dotplot(ego_pathway,showCategory=10, font.size = 12) + theme(axis.text.y=element
 
 #### Example of Gene Symbol: "CJI96_0000001", "CJI96_0000002", "CJI96_0000005", "CJI96_0000006", "CJI96_0000007", "CJI96_0000008"
 
+```
+
+### You can also use the prebuilt database for Candida auris B11220.
+
+#### Step 1: Unzip the Database directory
+```bash
+unzip org.Cauris.eg.db.zip
+```
+#### Step 2: Install the database in R from local directory.
+```R
+install.packages("/path/to/the/directory/org.Cauris.eg.db", repos=NULL, type="source")
+library(org.Cauris.eg.db)
 ```
