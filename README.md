@@ -54,6 +54,8 @@ ego_pathway <- enrichKEGG(
     use_internal_data = FALSE
 )
 
+dotplot(ego_pathway,showCategory=10, font.size = 12) + theme(axis.text.y=element_text(size=12))
+
 #### Example of GID (Gene ID): "79514224", "40026922", "40026919", "40026918", "40026917", "40026916"
 
 #### Example of Gene Symbol: "CJI96_0000001", "CJI96_0000002", "CJI96_0000005", "CJI96_0000006", "CJI96_0000007", "CJI96_0000008"
