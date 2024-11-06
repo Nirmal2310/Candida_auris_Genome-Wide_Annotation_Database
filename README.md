@@ -23,7 +23,7 @@ author="Your Name <yourname@email.com>",
 outputDir = ".",
 tax_id="498019",
 genus="Candida",
-species="auris",
+species="auris.B11220",
 goTable="go")
 
 install.packages("./org.Cauris.B11220.eg.db", repos=NULL, type="source")
