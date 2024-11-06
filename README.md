@@ -3,6 +3,8 @@ This repository contains the Annotation Database for Candida auris B11220 and th
 
 ### The files required to build this database are in the DATA directory. You can build the database locally using the following R command
 ```R
+library(AnnotationForge)
+
 chr_data <- read.table(file="DATA/chr_names_B11220.txt")
 
 colnames(chr_data) <- c("GID", "CHROMOSOME")
